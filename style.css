@@ -80,7 +80,7 @@ nav a:active{
     display: flex;
     height: 700px;
     width: auto;
-    background: url('/images/hero.jpg');
+    background: url('./images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +132,7 @@ nav a:active{
     display: flex;
     height: auto;
     width: auto;
-    background: url('/images/team.jpg');
+    background: url('./images/team.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
