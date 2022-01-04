@@ -1,0 +1,182 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header{
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+}
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+header h1 {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+header .header-icon {
+    font-size: 70px;
+    color: goldenrod;
+    width: 80px;
+    text-shadow: 2px 2px rgba(196, 148, 28, 0.5);
+}
+header nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav a:hover{
+    transition: 0.3s;
+    border-left: 1px solid goldenrod;
+}
+nav a:active{
+    color: rgba(255, 255, 255, 0.726);
+    border: 1px solid goldenrod;
+    background-color: rgb(88, 88, 88);
+}
+@media only screen and (min-width: 320px) and (max-width: 831px){
+    header {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 431px){
+    header h1 {
+        font-size: 25px
+    }
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    height: 700px;
+    width: auto;
+    background: url('/images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.image1 {
+   font-size: 150px;
+   color: white;
+}
+.image1 i {
+    border: 1px solid white;
+}
+.hero .title {
+    color: white;
+    font-size: 20px;
+
+}
+/* portfolio */
+.portfolio{
+    display: flex;
+    height: 400px;
+    width: auto;
+    background-color: white;
+    justify-content: center;
+    margin-top: 40px;
+    flex-flow: column wrap;
+}
+.portfolio h2 {
+    font-size: 40px;
+}
+.icons {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.icons img {
+    width: 200px;
+    height: auto;
+}
+
+/* team */
+.team {
+    display: flex;
+    height: auto;
+    width: auto;
+    background: url('/images/team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.comments {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.comments img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.comments h3 {
+    font-size: 40px;
+}
+.comments h4 {
+    font-size: 20px;
+}
+.comments div {
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 30px;
+    height: 400px;
+}
+.comments h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+/* footer */
+
+footer {
+    background-color: white;
+    font-style: italic;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    font-size: 10px;
+    padding: 20px;
+}
